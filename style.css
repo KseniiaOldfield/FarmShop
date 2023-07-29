@@ -1,0 +1,148 @@
+body {
+    background-color: #C9E4C5;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+}
+
+.container {
+    display: flex;
+}
+
+.picture {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Josefin Sans', sans-serif;
+    flex: 1;
+    margin: 5px;
+    position: relative;
+}
+
+.one {
+    background-image: url('strawberry.jpg');
+    border:2px solid #F9F871;
+    border-radius: 10px;
+    }
+    
+    .two {
+    background-image: url('grape2.jpg');
+    border:2px solid #F9F871;
+    border-radius: 10px;
+    }
+    
+    .three {
+    background-image: url('gooseberry3.jpg');
+    border:2px solid #F9F871;
+    border-radius: 10px;
+    }
+    
+    .four {
+    background-image: url('blueberry4.jpg');
+    border:2px solid #F9F871;
+    border-radius: 10px;
+    }
+    
+    .five {
+    background-image: url('raspberry5.jpg');
+    border:2px solid #F9F871;
+    border-radius: 10px;
+    }
+    
+    .six {
+    background-image: url('blackberry6.jpg');
+    border:2px solid #F9F871;
+    border-radius: 10px;
+    }
+    
+    h4 {
+        position: absolute;
+        top:15px;
+        left: 40px;
+        background-color: #fff;
+        opacity: 0;
+    }
+
+    .par {
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        background-color: #fff;
+        opacity: 0;
+    }
+
+    .price {
+        position: absolute;
+        bottom:40px;
+        left: 40px;
+        background-color: #fff;
+        opacity: 0;
+    }
+
+    .selected {
+        flex:4;
+    }
+
+    .selected h4 {
+        font-size: 40px;
+        transition: all 1s ease-in;
+        opacity: 1;
+    }
+
+    .selected .par {
+        font-size: 20px;
+        transition: all 1s ease-in;
+        opacity: 1;
+    }
+
+    .selected .price {
+        font-size: 35px;
+        transition: all 1s ease-in;
+        opacity: 1;
+    }
+
+    label {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+    }
+
+    .text-input {
+        background-color: #C9E4C5;
+        border: none;
+        padding: 12px 20px;
+    }
+
+    .btn {
+        background-color: #FF7B54;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        width: 50%;
+        border: 2px solid #F9F871;
+        }
+        
+        
+        @media all and (max-width:800px){
+
+            .container {
+                flex-direction: column;
+                height: 100vh;
+            }
+
+            h1, h3 {
+                font-size: 50px;
+            }
+        }
+
+        @media all and (max-width:500px){
+
+            h1, h3 {
+                font-size: 40px;
+            }
+        }
